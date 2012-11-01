@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+ 
+<html>
+ 
+<head> 
+<title>Scrappy Products</title> 
+<link rel="SHORTCUT ICON" href="structure/favicon.ico" />
+<meta name="KEYWORDS" content="Minnesota Real Estate Buying Selling Homeownership Twin Cities Realtor Mortgage Rates,Joe Torkildson, Joey Torkildson, Joseph Torkildson, Real Estate, Twin Cities Realtor" />
+<meta name="DESCRIPTION" content="I'm Joey Torkildson with Edina Realty and I’m here to help in all of your real estate needs, whether it is to buy, sell, or rent. Please give me a call and we can get started on your real estate journey!" />
+<meta content='True' name='HandheldFriendly' />
+<meta content='width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;' name='viewport' />
+<meta name="viewport" content="width=device-width" />
+<link rel="stylesheet" href="css/theme.css" />
+<link rel="stylesheet" href="css/app-platform.css" />
+
+<!-- Add jQuery -->
+<script type="text/javascript" src="scripts/jquery-1.8.2.min.js"></script>
+
+<!-- Add PhoneGap -->
+<script type="text/javascript" src="phonegap.js"></script>
+<script type="text/javascript" src="childbrowser.js"></script>
+
+
+<!-- Call jQuery Mobile -->
+<script type="text/javascript" src="scripts/jquery.mobile-1.2.0.min.js"></script>
+<link rel="stylesheet" href="css/jquery.mobile.structure-1.2.0.min.css" />
+
+<!-- iOS add to home screen options -->
+<script type="text/javascript">
+var addToHomeConfig = {
+	animationIn: 'bubble',
+	animationOut: 'drop',
+	lifespan:100000,
+	touchIcon:true,
+};
+</script>
+<script type="text/javascript">
+$(document).bind('pageshow', function() {
+  var activePage = $('.page.ui-page-active');
+  activePage.find('input[placeholder], textarea[placeholder]').placeholder();
+});
+</script>
+
+<!-- Reflow layout, Form Placeholder, iOS home screen popup -->
+<script type="text/javascript" src="scripts/app-platform.js"></script>
+
+<script>
+	$(function() {
+	$('input, textarea').placeholder();
+	});
+</script>
+
+<!-- colorbox -->
+<link rel="stylesheet" href="lightbox/colorbox.css" type="text/css" media="screen" />
+<script type="text/javascript" src="lightbox/jquery.colorbox.js"></script>
+
+<!-- Picasa Web Integrator -->
+<link rel="stylesheet" href="lightbox/pwi.css" type="text/css"/>
+<script type="text/javascript" src="lightbox/jquery.pwi.js"></script>
+<script type="text/javascript" src="lightbox/jquery.blockUI.js"></script>
+
+<script type="text/javascript">
+
+  $(document).ready(function () {
+	var settings = {
+	  username: 'scrappyproducts',
+	  maxresults: 50,
+	  mode: 'album',
+	  album: 'GroceryBags',
+	  thumbCrop: 1,
+	  showAlbumDescription: false,
+	};
+	  $("#gallery_1").pwi(settings);
+  });
+  
+  $(document).ready(function () {
+	var settings = {
+	  username: 'scrappyproducts',
+	  maxresults: 50,
+	  mode: 'album',
+	  album: 'ToteBags',
+	  thumbCrop: 1,
+	  showAlbumDescription: false,
+	};
+	  $("#gallery_2").pwi(settings);
+  });
+  
+  $(document).ready(function () {
+	var settings = {
+	  username: 'scrappyproducts',
+	  maxresults: 50,
+	  mode: 'album',
+	  album: 'CosmeticBags',
+	  thumbCrop: 1,
+	  showAlbumDescription: false,
+	};
+	  $("#gallery_3").pwi(settings);
+  });
+
+</script>
+
+<!-- Form Validation 
+<script type="text/javascript" src="scripts/jquery.validate.min.js"></script>
+<script type="text/javascript">
+$(function() {
+	$( "#form1" ).validate({
+		submitHandler: function(form) {
+		   var data= $(form).serialize()
+		
+				$.ajax({
+				type: "POST",
+				url: "scripts/form.php",
+				//url: "http://joeytork.app-platform.net/scripts/form.php",
+				data: data,
+				success: function(){
+					$(form).fadeOut(1000);
+						  $('.thanks').fadeIn(1000);
+				}
+				});
+			return false;
+		}
+	});
+}); 	
+</script>
+-->
+<!-- Form reset button 
+<script type="text/javascript">
+$(function() {
+	$('#reset_button').click(
+		function() { 
+			$('.thanks').fadeOut();
+			$('.form1').fadeIn(2500); 
+			$("#form1")[0].reset();
+		}
+	);
+}); 	
+</script>
+-->
+</head> 
+
+<body>
+
+<!-- Home -->
+<div data-role="page" data-theme="a" id="home"> 
+  <div data-role="header" data-theme="a" align="center">
+    <img src="structure/logo.png" alt="Pyxis Solutions">
+  </div>
+     
+	<div data-role="content">
+    	<div align="center"><img src="structure/image.png" alt="Joey" class="shadow"></div>
+	  	<h1 align="center"><a id="body" href="tel:8003263524">(800) 326-3524</a></h1>
+   	  	<p>
+      	
+        <div align="center">
+        <a id="body" href="#help" data-rel="popup" data-position-to="window" data-transition="pop">How does this work?</a><br />
+        </div>
+        
+        <!-- Help Popup-->
+        <div data-role="popup" id="help" data-overlay-theme="b" data-theme="a" style="max-width:500px;" class="ui-corner-all">
+        
+            <div data-role="header" data-theme="a" align="center">
+                <img src="structure/logo2.png">
+            </div>
+        
+            <div data-role="content" data-theme="a">	
+                <h2>How does this work?</h2> 
+                <p>
+                <strong>Send a referral</strong><br>
+				Tap the Email Referral button and an email will be generated with Scrappy Products contact information. Just enter the email address of the person you would like to refer in the To: field and hit send! They will receive the information, and Scrappy Products will have both your email address and your referrals email address for tracking purposes.<br />
+                <br />
+                <strong>How do I get an app like this for my business?</strong><br />
+                You can either tap the Get your own app! button on the bottom of the previous page or you can go to 
+                <a target="_blank" onClick="window.plugins.childBrowser.openExternal('http://app-platform.net');">www.app-platform.net</a> to find out how to get your own app.
+                </p>
+            </div>
+            
+            <div data-role="footer" align="center">
+                <a href="#" data-role="button" data-inline="true" data-theme="b" data-rel="back" data-icon="delete" style="margin-top:10px; margin-bottom:10px;">Close Window</a>
+            </div>
+        </div>
+        
+		<br>
+
+  		<a href="mailto:?cc=scrappyproducts%40gmail.com&subject=Scrappy%20Products&body=Scrappy%20Products%20was%20born%20out%20of%20our%20sense%20of%20responsibility%20to%20do%20the%20right%20thing%20for%20our%20environment.%20At%20Scrappyproducts.com%20we%20take%20our%20misprints%2C%20scraps%2C%20and%20overruns%20from%20our%20core%20business%20(BCI)%20and%20upcycle%20them%20into%20our%20washable%2C%20durable%20Green%20Bag%20line.%20Most%20bags%20are%20made%20from%20100%25%20upcycled%20water%20bottle%20fabric.%20They%20are%20recyclable%2C%20washable%2C%20durable%20and%20printed%20with%20water-based%20inks.%20When%20you%E2%80%99re%20finally%20done%20with%20the%20bags%20your%20grandkids%20can%20send%20them%20back%20to%20the%20mill%20to%20be%20recycled%20again.%20It%20takes%20approximately%2010%20plastic%20water%20bottles%20to%20make%201%20tote.%0D%0A%0D%0AAll%20bags%20can%20be%20custom%20printed%20with%20a%20minimum%20quantity%20of%206.%20Contact%20our%20sales%20department%20to%20discuss%20the%20possibilities.%0D%0A%0D%0A%0D%0ASincerely%2C%0D%0A%0D%0ANora%20Norby%0D%0A612%20871-1015%0D%0Anora.norby%40bannercreations.com%0D%0A%0D%0A1620%20Central%20Ave.%2C%20Suite%20151%0D%0AMinneapolis%2C%20MN%2055413" target="_blank" data-icon="email" data-role="button" data-transition="slide">Email Referral</a>
+  		<a href="mailto:?cc=scrappyproducts%40gmail.com&subject=Scrappy%20Products%20App&body=Get%20the%20Scrappy%20Products%20App%20at%20http%3A%2F%2Fscrappy.app-platform.net." target="_blank" data-icon="email" data-role="button" data-transition="slide">Send this app</a>
+    	
+        <br />
+        <br />
+
+    	<strong>Contact</strong>
+        <a href="tel:8003263524" data-role="button" data-icon="phone">(800) 326-3524</a>
+        <a href="mailto:info@scrappyproducts.com" target="_blank" data-icon="email" data-role="button">info@scrappyproducts.com</a>
+        <a data-role="button" data-icon="home" target="_blank" onClick="window.plugins.childBrowser.openExternal('http://www.scrappyproducts.com');">www.scrappyproducts.com</a>
+        <a data-role="button" data-icon="facebook" target="_blank" onClick="window.plugins.childBrowser.openExternal('https://www.facebook.com/scrappyproducts');">Facebook</a>
+        <a data-role="button" data-icon="linkedin" target="_blank" onClick="window.plugins.childBrowser.openExternal('http://www.linkedin.com/company/banner-creations-inc.');">LinkedIn</a>
+
+        <br />
+        <br />
+
+    	<strong>Contact Nora</strong>
+        <a href="tel:6128711015" data-role="button" data-icon="phone">(612) 871-1015</a>
+        <a href="mailto:nora.norby@bannercreations.com" target="_blank" data-icon="email" data-role="button">nora.norby@bannercreations.com</a>
+        
+        <br />
+        <strong>Location:</strong><br />
+        1620 Central Ave., Suite 151<br />
+        Minneapolis, MN 55413<br />
+        <a data-role="button" data-icon="home" target="_blank" onClick="window.plugins.childBrowser.openExternal('https://maps.google.com/maps?q=1620+Central+Ave.,+Suite+151+Minneapolis,+MN+55413&hnear=1620+Central+Ave+NE+%23151,+Minneapolis,+Minnesota+55413&gl=us&t=m&z=16&iwloc=r0');">Map</a>
+        
+        <br />
+        
+        <div data-role="collapsible" data-collapsed="true">
+        <h2>Our Story</h2>
+        <p>
+        Scrappy Products is a division of Banner Creations, Inc. BCI is an eco-savvy woman-owned custom manufacturer of banners, flags, table covers, street banners, fabric walls and much more. Since our beginning in 1989 we have felt a responsibility to manage our environmental impact. We have always recycled our paper, used water-based inks and been pioneers in steering the industry toward green processes and products. Scrappy Products was born out of that sense of responsibility toward our environment. Our bags are made from a collection of scrap banners, misprints, overprints and fabric scraps. The majority are made from 100% upcycled fabric made from recycled water bottles. They are recyclable, washable, very durable and printed with water-based inks. When you're finally done with your bags your great-grandchildren can send them back to the mill to be upcycled again. You may also be interested to know that it takes approximately 10 plastic water bottles to make 1 tote. All bags can be custom printed with a minimum quantity of 50.
+        </p>
+        </div>
+        
+        <br />
+        <strong>Grocery Bags</strong>
+        <div id="gallery_1"></div>
+        
+        <hr width="100%">
+        <br />
+        <strong>Tote Bags</strong>
+        <div id="gallery_2"></div>
+        
+        <hr width="100%">
+        <br />
+        <strong>Cosmetic Bags</strong>
+        <div id="gallery_3"></div>
+        </p>
+  </div> 
+    
+  <div data-role="footer" data-theme="a">
+    <div class="footerText" align="center" style="margin-top:15px; margin-bottom:15px;">
+		<script type="text/javascript"> 
+            copyright=new Date(); update=copyright.getFullYear(); document.write("&nbsp;Copyright &copy; "+ update + " Banner Creations, Inc.");
+        </script>
+        <br /><br />
+        <a href="mailto:?cc=info%40app-platform.net&subject=Get%20Your%20Own%20App!&body=Go%20to%20http%3A%2F%2Fapp-platform.net%20to%20find%20out%20how%20to%20get%20your%20own%20app!" target="_blank" data-icon="email" data-inline="true" data-role="button" data-theme="b">Get your own app!</a>
+      </div>
+    </div> 
+</div>
+
+
+</body>
+</html>
